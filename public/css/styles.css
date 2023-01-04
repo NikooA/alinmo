@@ -1,0 +1,21 @@
+@import url(normalize.css);
+
+/*Para crear variables y utilizarlas más fácil en el código de Css, como los colores o tipografías*/
+:root{
+    --main-background: #C0DEFF;
+    --secondary-background: #F4E06D;
+    --details: #ADA2FF;
+    --small-details: #5630D4;
+}
+
+/*Código de Css*/
+body{
+    background-color: var(--secondary-background);
+}
+
+h1{
+    background-color: #ADA2FF;
+    color: var(--small-details);
+    text-align: center;
+    font-size: 60px; 
+}
