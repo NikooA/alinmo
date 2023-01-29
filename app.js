@@ -21,3 +21,11 @@ app.get('/', function (req, res) {
 app.get('/products', function (req, res) {
     res.sendFile(path.resolve(__dirname, './views/products.html'))
   })
+
+app.get('/login', function (req, res) {
+    res.sendFile(path.resolve(__dirname, './views/login.html'))
+  })  
+
+app.get('/register', function (req, res) {
+    res.sendFile(path.resolve(__dirname, './views/register.html'))
+  })  

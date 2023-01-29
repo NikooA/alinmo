@@ -20,23 +20,32 @@
 </head>
 
 <body>
-    <div class="nav-conteiner">
-        <h1>Alinmo</h1>
-        <ul class="nav-conteiner-list">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Servicios</a></li>
-        </ul>
-        <!-- <i class="bi-people icon-people"></i><br>
-        <i class="material-symbols-outlined icon-home">home</i><br> -->
-    </div>
-    <div class="items-conteiner">
-        <p>Departamento 1</p>
-        <p>Departamento 2</p>
-        <p>Departamento 3</p>
-        <p>Departamento 4</p>
-        <p>Departamento 5</p>
-        <p>Departamento 6</p>
-    </div>
+    <header>
+        <div class="nav-conteiner">
+            <h1>Alinmo</h1>
+            <ul class="nav-conteiner-list">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Servicios</a></li>
+            </ul>
+        </div> 
+    </header>
+    <main>
+        <h1>Login de Usuario</h1>
+        <form class="form-login" action="/views/login.html" method="post">
+            <div>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="password">Contraseña: </label>
+                <input type="password" name="password" id="password">
+            </div>
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>

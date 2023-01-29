@@ -1,0 +1,14 @@
+h1{
+    text-align: center;
+}
+
+.form-login{
+    border: 3px solid #5630D4;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    border-radius: 15px;
+}

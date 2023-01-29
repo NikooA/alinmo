@@ -1,4 +1,6 @@
 @import url(normalize.css);
+@import url(register.css);
+@import url(login.css);
 
 /*Para crear variables y utilizarlas más fácil en el código de Css, como los colores o tipografías*/
 :root{
@@ -9,13 +11,121 @@
 }
 
 /*Código de Css*/
+html{
+    height: auto;
+    min-height: 100%;
+}
+
 body{
-    background-color: var(--secondary-background);
+    background: linear-gradient(#F4E06D, #5630D4)
+}
+
+.nav-conteiner{
+    background-color: #ADA2FF;
+    border: 12px groove #C0DEFF;
+    margin:auto;
+    font-size: 20px; 
+    padding: 5px;
+}
+
+.nav-conteiner h1{
+    margin-top: 5px;
+    font-size: 40px;
+    color: var(--small-details);
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px rgb(55, 49, 49);
 }
 
 h1{
-    background-color: #ADA2FF;
-    color: var(--small-details);
+    margin: auto;
+}
+
+/* Para que se adapte la imagen a toda la pantalla */
+/* body{
+    background-size: cover;
+} */
+
+/* Para armar una barra de navegacion(Inicio, Blog y demas) */
+/* .nav_links{
+   margin-left:auto;
+   padding: 0;
+   display: grid;
+   grid-auto-flow: column;
+   grid-auto-columns: max-content;
+   gap: 2em;
+
+} */
+
+/* Para centrar imagenes a su contenedor */
+/* .img{
+    object-fit: cover;
+    object-position: 50% 30%;
+} */
+
+.icon-people{
+    font-size: 30px;
+    color:#5630D4;
+    padding: 20px;
+}
+
+.icon-home{
+    font-size: 30px;
+    color:#5630D4;
+    padding: 20px;
+    margin: auto;
+}
+
+.nav-conteiner-list{
+    list-style-type:none;
     text-align: center;
-    font-size: 60px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.nav-conteiner-list li{
+    
+    margin: 6px;
+    border: 3px solid #ADA2FF;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #5630D4;
+    width: 15%;
+}
+
+.nav-conteiner-list:hover li{
+    background-color:#C0DEFF;
+    text-decoration: #5630D4;
+    padding: 8px;
+}
+
+.nav-conteiner-list li a{
+    text-decoration: none;
+    color: #C0DEFF
+}
+
+.items-conteiner > p{
+    background-color: #F4E06D;
+    padding: 15px;
+    margin: 20px;
+    color: #5630D4;
+    width: 20%;
+    font-size: 30px;
+    text-align: center;
+    border: 2px solid #5630D4;
+    border-radius: 7px;
+    box-shadow: 3px 3px 5px 5px grey;
+    
+}
+
+.items-conteiner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 500px;
+    align-items: center;
+    align-content: space-around;
 }
