@@ -1,14 +1,54 @@
 h1{
     text-align: center;
+    padding: 20px;
 }
 
 .form-login{
     border: 3px solid #5630D4;
-    margin: auto;
-    padding: 10px;
+    margin: 0 auto;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 50%;
     border-radius: 15px;
+}
+
+.login-email{
+    padding: 10px;
+}
+
+.login-email input{
+    width: 90%;
+    border-radius: 5px;
+    padding: 5px;
+
+}
+
+.login-password{
+    padding: 10px;
+}
+
+.login-password input{
+    width: 86%;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+button{
+    width: 50%;
+    margin: auto;
+    border-radius: 15px;
+    border: 2px solid #5630D4 ;
+    padding: 5px;
+    background-color: #ffffff;
+    color: #5630D4;
+    transition-property: background-color, color;
+    transition-duration: 0.5s;
+}
+
+button:hover{
+    background-color: #F4E06D;
+    color: #5630D4;
+    font-weight: bold;
 }

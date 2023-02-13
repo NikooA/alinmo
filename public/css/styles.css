@@ -4,10 +4,10 @@
 
 /*Para crear variables y utilizarlas más fácil en el código de Css, como los colores o tipografías*/
 :root{
-    --main-background: #C0DEFF;
-    --secondary-background: #F4E06D;
-    --details: #ADA2FF;
-    --small-details: #5630D4;
+    --ligth-blue: #C0DEFF;
+    --yellow: #F4E06D;
+    --purple: #ADA2FF;
+    --blue: #5630D4;
 }
 
 /*Código de Css*/
@@ -26,12 +26,14 @@ body{
     margin:auto;
     font-size: 20px; 
     padding: 5px;
+    display: flex;
+    flex-direction: row;
 }
 
 .nav-conteiner h1{
     margin-top: 5px;
-    font-size: 40px;
-    color: var(--small-details);
+    font-size: 50px;
+    color: var(--blue);
     text-align: center;
     text-transform: uppercase;
     text-shadow: 2px 2px 2px rgb(55, 49, 49);
@@ -39,6 +41,24 @@ body{
 
 h1{
     margin: auto;
+}
+
+.nav-logo{
+    
+    order: -1;
+    margin: auto;
+    width: 30%;
+    
+}
+
+.nav-logo img{
+    width: 30%;
+}
+
+.img-alicante img{
+    width: 100%;
+    max-height: 500px;
+    opacity: 0.5;
 }
 
 /* Para que se adapte la imagen a toda la pantalla */
@@ -86,7 +106,7 @@ h1{
 }
 
 .nav-conteiner-list li{
-    
+    list-style-type:none;
     margin: 6px;
     border: 3px solid #ADA2FF;
     border-radius: 10px;
@@ -96,14 +116,11 @@ h1{
 }
 
 .nav-conteiner-list:hover li{
-    background-color:#C0DEFF;
-    text-decoration: #5630D4;
-    padding: 8px;
+    
 }
 
 .nav-conteiner-list li a{
-    text-decoration: none;
-    color: #C0DEFF
+    
 }
 
 .items-conteiner > p{
@@ -128,4 +145,19 @@ h1{
     height: 500px;
     align-items: center;
     align-content: space-around;
+    width: 100%
+}
+
+footer{
+    background-color: #ADA2FF;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-logo img{
+    width: 30%;
+    padding: 10px;
+    
 }
