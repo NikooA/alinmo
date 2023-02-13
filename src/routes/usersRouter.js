@@ -13,5 +13,8 @@ router.get("/register", usersController.register);
 //Procesa el pedido get con ruta /users/login
 router.get("/login", usersController.login);
 
+//Procesa el pedido get con ruta /users/profile
+router.get("/profile", usersController.profile);
+
 //Exportamos la variable router ya con todas las rutas "guardadas", que se usará en app.js
 module.exports = router

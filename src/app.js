@@ -5,13 +5,19 @@ const app = express()
 //Modulo nativo para manejar las rutas de los archivos
 const path = require('path')
 
-//Importamos los distintos enrutadores
-const productsRouter = require("./routes/productsRouter.js")
-const usersRouter = require("./routes/usersRouter.js")
-const mainRouter = require("./routes/mainRouter.js")
+//Configuramos el motor de plantillas Ejs
+app.set("view engine", "ejs");
 
 //Usando recursos estáticos
 app.use(express.static('public'));
+
+//Configuramos donde se encuentran las vistas
+app.set('views', path.resolve(__dirname, "views"))
+
+//Importamos los distintos enrutadores
+const productsRouter = require("./routes/productsRouter.js");
+const usersRouter = require("./routes/usersRouter.js");
+const mainRouter = require("./routes/mainRouter.js");
 
 //Usando los enrutadores importados
 app.use("/products", productsRouter);

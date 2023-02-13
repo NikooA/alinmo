@@ -6,7 +6,11 @@ const mainController = {
 
     //Manejo del pedido get con ruta /
     index: (req, res) => {
-        res.sendFile(path.resolve(__dirname, "../views/index.html"))
+        //Cambiamos como se usan las vistas(usamos render)
+        //Ahora podemos pasar datos a las vistas (dinamismo)
+        let datosAEnviar = "Datos a enviar de la BD"
+        res.render("index", {datos: datosAEnviar })
+        // res.sendFile(path.resolve(__dirname, "../views/index.html"))
     }
 }
 

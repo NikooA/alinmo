@@ -6,11 +6,15 @@ const usersController = {
 
     //Manejo del pedido get con ruta /users/login
     login: (req, res) => {
-        res.sendFile(path.resolve(__dirname, "../views/login.html"))
+        res.sendFile(path.resolve(__dirname, "../views/login.ejs"))
     },
     //Manejo del pedido get con ruta /users/register
     register: (req, res) => {
-        res.sendFile(path.resolve(__dirname, "../views/register.html"))
+        res.sendFile(path.resolve(__dirname, "../views/register.ejs"))
+    },
+    //Manejo del pedido get con ruta /users/profile
+    profile: (req, res) => {
+        res.sendFile(path.resolve(__dirname, "../views/profile.ejs"))
     }
 }
 
